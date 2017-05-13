@@ -15,7 +15,7 @@ app.use('/', function (req, res, next) {
     };
     let output = server.template(data);
     return res.status(200).send(output);
-    next();
+    //next();
 });
 
 const port = process.env.PORT || 80;
